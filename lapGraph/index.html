@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>折れ線グラフ表示</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="container">
+        <label for="dataInput1">ラップ1</label>
+        <input type="text" id="dataInput1" placeholder="例: 10.4-11.3-14.4">
+        <label for="dataInput2">ラップ2</label>
+        <input type="text" id="dataInput2" placeholder="例: 9.8-10.2-11.6">
+        <button onclick="drawGraph()">グラフ表示</button>
+    </div>
+    <div id="graph-container">
+        <canvas id="lineChart"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
